@@ -12,7 +12,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t annalupanova1999/jenkinstest:latest .'
+				sh 'sudo docker build -t annalupanova1999/jenkinstest:latest .'
 			}
 		}
 
@@ -26,7 +26,7 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh 'docker push annalupanova1999/jenkinstest:latest'
+				sh 'sudo docker push annalupanova1999/jenkinstest:latest'
 			}
 		}
 	}
